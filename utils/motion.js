@@ -36,6 +36,12 @@ export const textVariant = (delay) => {
       },
     };
   };
+
+  export const nav_variant = {
+    open: { opacity: 1, x: 0 },
+    closed: { opacity: 0, x: "-100%" },
+  }
+  
   
   export const zoomIn = (delay, duration) => {
     return {
