@@ -67,6 +67,8 @@ export const logo = "/assets/logo.svg"
 export const menu = "/assets/menu.svg"
 export const close = "/assets/close.svg"
 
+export const software =  "/assets/software.png";
+export const frontend =  "/assets/frontend.png";
 export const backend =  "/assets/backend.png";
 export const creator =  "/assets/creator.png";
 export const mobile =  "/assets/mobile.png";
