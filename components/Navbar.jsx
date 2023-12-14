@@ -29,7 +29,7 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
+          <div className="w-9 h-9 bg-slate-200 rounded-full p-1"><img src={logo} alt="logo" className="w-full h-full object-contain" /></div>
           <p className="text-white text-[18px] font-bold cursor-pointer">
             Umer Ahmed Siddiqui
           </p>
