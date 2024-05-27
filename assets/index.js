@@ -93,6 +93,10 @@ export const redux = "assets/tech/redux.png";
 export const tailwind = "assets/tech/tailwind.png";
 export const typescript = "assets/tech/typescript.png";
 export const threejs = "assets/tech/threejs.svg";
+export const nextJs = "assets/tech/next-js.svg";
+export const express = "assets/tech/express.svg";
+export const python = "assets/tech/python.svg";
+export const django = "assets/tech/django.svg";
 
 
 export const carrent = "assets/carrent.png";
@@ -100,3 +104,8 @@ export const jobit = "assets/jobit.png";
 export const tripguide = "assets/tripguide.png";
 
 export const github = "assets/github.png";
+
+// Projects
+export const imagnify = "assets/projects/imagnify.png";
+export const promtopia = "assets/projects/promtopia.png";
+export const assessAI = "assets/projects/assessAI.png";
