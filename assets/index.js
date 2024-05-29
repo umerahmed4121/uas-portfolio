@@ -68,8 +68,8 @@ export const menu = "/assets/menu.svg"
 export const close = "/assets/close.svg"
 
 export const software =  "/assets/software.png";
-export const frontend =  "/assets/frontend.png";
-export const backend =  "/assets/backend.png";
+export const frontend_dev =  "/assets/frontend.png";
+export const backend_dev =  "/assets/backend.png";
 export const creator =  "/assets/creator.png";
 export const mobile =  "/assets/mobile.png";
 export const web =  "/assets/web.png";
@@ -103,9 +103,33 @@ export const carrent = "assets/carrent.png";
 export const jobit = "assets/jobit.png";
 export const tripguide = "assets/tripguide.png";
 
-export const github = "assets/github.png";
+
 
 // Projects
 export const imagnify = "assets/projects/imagnify.png";
 export const promtopia = "assets/projects/promtopia.png";
 export const assessAI = "assets/projects/assessAI.png";
+
+// Tech Stack
+
+// Frontend
+
+export const materialUI = "assets/tech-stack/material-ui.svg";
+export const antDesign = "assets/tech-stack/ant-design.svg";
+export const bootstrap = "assets/tech-stack/bootstrap.svg";
+
+// Backend
+
+
+// Database
+
+export const firebase = "assets/tech-stack/firebase.svg";
+export const mysql = "assets/tech-stack/mysql.svg";
+
+// Others
+
+export const stripe = "assets/tech-stack/stripe.png";
+
+// Version Control
+
+export const github = "assets/tech-stack/github.svg";
