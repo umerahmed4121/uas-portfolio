@@ -36,7 +36,7 @@ const TechStackCard = ({ tech, title, center }) => {
                     restDelta: 0.001
                 }
             }}
-            className="w-60 bg-tertiary text-white p-2 m-1   rounded-md z-10">
+            className="w-full lg:w-60 bg-tertiary text-white p-2 m-1   rounded-md z-10">
             <motion.div
 
             >
@@ -73,9 +73,9 @@ const TechStackCenterCard = ({ tech, title, center }) => {
     )
 }
 
-const Lines = ({width, translateX, translateY, rotate}) => {
+const Lines = ({ width, translateX, translateY, rotate }) => {
 
-    
+
 
     return (
         <motion.span
@@ -97,8 +97,8 @@ const Lines = ({width, translateX, translateY, rotate}) => {
             //     return `rotate(${rotate}) translateX(${x}) translateY(${y})`
             // }}
             className={`absolute w-[${width}px] h-2 bg-tertiary ${translateX > 0 ? `translate-x-[${parseInt(translateX)}px]` : `-translate-x-[${translateX}px]`} ${translateY > 0 ? `translate-y-[${translateY}px]` : `-translate-y-[${translateY}px]`} rotate-[${rotate}deg]`}>
-                
-                
+
+
         </motion.span>
     )
 }
@@ -109,67 +109,67 @@ const Lines = ({width, translateX, translateY, rotate}) => {
 const TechStack = () => {
     return (
         <>
-        <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} text-center`}>
-          My Skills
-        </p>
-        <h2 className={`${styles.sectionHeadText} text-center`}>
-            Tech Stack
-        </h2>
-      </motion.div>
-        <motion.div
-            className=' w-full p-2 mt-12'
-        >
-
-            <motion.div
-                className=' grid grid-cols-3 justify-items-center'>
-                <TechStackCard tech={markupAndStyling} title="Markup & Styling" />
-                <TechStackCard tech={frontend} title="Frontend" />
-                <TechStackCard tech={backend} title="Backend" />
-
-
-
+            <motion.div variants={textVariant()}>
+                <p className={`${styles.sectionSubText} text-center`}>
+                    My Skills
+                </p>
+                <h2 className={`${styles.sectionHeadText} text-center`}>
+                    Tech Stack
+                </h2>
             </motion.div>
-            <div className='grid justify-center py-10'>
-                {/* <Lines width={320} translateX={152} translateY={54} rotate={45} />
+            <motion.div
+                className=' w-full p-2 mt-12'
+            >
+
+                <motion.div
+                    className='grid gap-4 lg:grid-cols-3 justify-items-center'>
+                    <TechStackCard tech={markupAndStyling} title="Markup & Styling" />
+                    <TechStackCard tech={frontend} title="Frontend" />
+                    <TechStackCard tech={backend} title="Backend" />
+
+
+
+                </motion.div>
+                <div className='grid justify-center py-10'>
+                    {/* <Lines width={320} translateX={152} translateY={54} rotate={45} />
                 <Lines width={64} translateX={530} translateY={-24} rotate={90} />
                 <Lines width={320} translateX={666} translateY={48} rotate={315} /> */}
 
-                <motion.div
-                    whileHover={{ scale: 1.1 }}
-                    initial={{ opacity: 0, scale: 0.5 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{
-                        duration: 0.3,
-                        ease: [0, 0.71, 0.2, 1.01],
-                        scale: {
-                            type: "spring",
-                            damping: 5,
-                            stiffness: 100,
-                            restDelta: 0.001
-                        }
-                    }}
-                >
-                    <TechStackCenterCard tech={programmingLanguages} title="Programming Languages" center={true} />
-                </motion.div>
-                {/* <Lines width={262} translateX={202} translateY={279} rotate={315} />
+                    <motion.div
+                        whileHover={{ scale: 1.1 }}
+                        initial={{ opacity: 0, scale: 0.5 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{
+                            duration: 0.3,
+                            ease: [0, 0.71, 0.2, 1.01],
+                            scale: {
+                                type: "spring",
+                                damping: 5,
+                                stiffness: 100,
+                                restDelta: 0.001
+                            }
+                        }}
+                    >
+                        <TechStackCenterCard tech={programmingLanguages} title="Programming Languages" center={true} />
+                    </motion.div>
+                    {/* <Lines width={262} translateX={202} translateY={279} rotate={315} />
                 <Lines width={64} translateX={530} translateY={342} rotate={90} />
                 <Lines width={262} translateX={673} translateY={279} rotate={45} /> */}
 
-                
 
-            </div>
 
-            <div className=' grid grid-cols-3 justify-items-center'>
-                <TechStackCard tech={databases} title="Databases" />
-                <TechStackCard tech={versionControl} title="Version Control" />
-                <TechStackCard tech={frameworks} title="Frameworks" />
-            </div>
+                </div>
 
-        </motion.div>
-    
+                <div className=' grid gap-4 lg:grid-cols-3 justify-items-center'>
+                    <TechStackCard tech={databases} title="Databases" />
+                    <TechStackCard tech={versionControl} title="Version Control" />
+                    <TechStackCard tech={frameworks} title="Frameworks" />
+                </div>
+
+            </motion.div>
+
         </>
-        )
+    )
 }
 
 export default SectionWrapper(TechStack, "")
